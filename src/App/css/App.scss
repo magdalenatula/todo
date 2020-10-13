@@ -1,0 +1,108 @@
+body, html{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  background-color: #dedede;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding:0.3em;
+  font-size: 1.3em;
+}
+.nav-link:hover {
+  opacity: 50%;
+}
+.big-headline{
+  color:#1309d6;
+  font-size: 4em;
+  padding-top: .5em;
+  span {
+    opacity: 15%;
+  }
+}
+.list-todo{
+  width:60%;
+  margin:auto;
+  padding: 3% 5%;
+  text-align: left;
+  .todo-completed{
+    text-decoration: line-through;
+    opacity: 40%;
+  }
+  .single-todo{
+      li {
+        background-color: white;
+        display: grid;
+        border-radius: 2em;
+        grid-template-columns: 4fr 1fr;
+        list-style-type: none;
+
+        margin: auto;
+
+        div {
+          display: grid;
+          grid-template-columns: 1fr 4fr;
+          margin-top: 1em;
+          margin-bottom: 1em;
+
+        }
+        div:first-child {
+          align-items: right;
+          padding-left: 2em;
+          font-size: 1.3em;
+        }
+        div p{
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+
+      }
+      li:hover{
+        cursor: pointer;
+      }
+      button {
+        border-radius: 0em 2em 2em 0em;
+        border:none;
+        font-size: 1.3em;
+      }
+  }  
+
+}
+.todos-form{
+  width:50%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:3%;
+  padding: 2% 5%;
+  background-color: white;
+  border-radius: 2em;
+  input {
+    border-radius: 2em 0em 0em 2em;
+    background-color: #e4e3f5;
+    border:none;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    width: 70%;
+    padding-left: 1em;
+  }
+  button {
+    border-radius: 0em 2em 2em 0em;
+    border:none;
+    padding: 1.5em 4%;
+    font-weight: bold;
+
+  }
+
+  h2{
+    color:#1309d6;
+  }
+}
